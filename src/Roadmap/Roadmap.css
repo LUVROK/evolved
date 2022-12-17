@@ -1,0 +1,274 @@
+.Roadmap{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Companies_h1{
+    margin-bottom: 10px;
+}
+.ut_p{
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+@media (max-width: 700px) {
+    .ut_p{
+        width: 80vw;
+    }
+}
+.roadmap_container{
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+.first{
+    z-index: 999;
+}
+.Rroadmap_item__contain{
+    width: 980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.white{
+    color: black;
+    background: #FFFFFF;
+}
+.Rroadmap_item__contain_left{
+width: 423px;
+}
+.Rroadmap_item__contain_left_h1{
+    font-family: Craftwork Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 52px;
+}
+.Rroadmap_item__contain_left_span{
+    margin-right: 30px;
+}
+.h1_sec{
+ margin-left: 30px;
+}
+.Rroadmap_item__contain_left_p{
+    margin-bottom: 123px;
+    line-height: 29px;
+}
+.Rroadmap_item__contain_right{
+    position: absolute;
+    top: 400px;
+    z-index: 9999;
+    left: calc(100% - 200px);
+}
+.Rroadmap_item__contain_right_photo{
+    height: 350px;
+    width: 300px;
+}
+.Rroadmap_item__contain_first_gear{
+    position: absolute;
+    left: -10vw;
+    width: 400px;
+    top: 300px;
+    animation: moving 5s infinite linear;
+}
+.Roadmap_second_electro{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.Roadmap_second_electro_coin{
+    margin-left: auto;
+    margin-right: 0 !important;
+    margin-left: 20%;
+}
+.Roadmap_second_electro_p{
+    width: 380px;
+    margin-right: 130px;
+    font-family: Craftwork Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 29px;
+    margin-bottom: 71px;
+}
+.Roadmap_second_electro_p_sec{
+    width: 80%;
+}
+.sec{
+    margin-right: 0;
+    font-weight: 800;
+}
+.Rroadmap_item__contain_right_sec{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 9999;
+    left: calc(100% - 50px);
+}
+.Rroadmap_item__contain_right_photo_sec{
+    min-height: 50vh;
+    width: 130px;
+}
+.sec_knight{
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: -150px;
+    z-index: 9999;
+}
+.sec_knight_last{
+    position: absolute;
+    left: 0;
+    top: -270px;
+    height: 350px;
+    width: 300px;
+}
+.Roadmap_second_electro_p_sec_last{
+    text-align: right;
+}
+.Rroadmap_item__contain_left_sec{
+margin-top: 40px;
+}
+.Rroadmap_item__contain_coinmap{
+    float: right;
+}
+.Rroadmap_item__contain_left_h1_end{
+    position: relative;
+    text-align: left;
+    font-family: Craftwork Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 52px;
+}
+.num{
+    margin-left: 30px;
+}
+.Rroadmap_item__contain_left_h1_end_four{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.top_right_better{
+    float: right;
+    display: flex;
+}
+.sec_imglast{
+    position: absolute;
+    width: 400px;
+    bottom: -400px;
+    animation: moving 5s infinite linear;
+    left: 0;
+}
+.blood_nearfooter{
+    position: absolute;
+    width: 378px;
+    bottom: -1px;
+    right: 100px;
+
+}
+.sec_imglastblood{
+    position: absolute;
+    bottom: 400px;
+    z-index: 999;
+    left: -10px;
+    width: 150px;
+}
+.gear_road_middle{
+    animation: moving 5s infinite linear;
+    z-index: 999;
+    bottom: -60px;
+    right: -100px;
+    position: absolute;
+    top: 25px;
+    width: 200px;
+}
+.zip{
+    z-index: 9999;
+}
+@media (max-width: 980px) {
+.Rroadmap_item__contain{
+    width: 80vw;
+}
+    .sec_imglastblood{
+        width: 70px;
+        top: -90px;
+    }
+    .Roadmap_second_electro_p {
+    width: 50%;
+    margin: 0;
+    padding: 0 10px;
+        margin-bottom: 50px;
+    }
+    .blood_nearfooter{
+        position: absolute;
+        width: 40vw;
+        bottom: -1px;
+        right: 10px;
+    }
+}
+@media (max-width: 830px) {
+    .Rroadmap_item__contain_right_photo{
+        width: 40vw;
+        height: 44vw;
+    }
+}
+@media (max-width: 980px) {
+    .sec_knight{
+        width: 38vw;
+        height: 44vw;
+        position: absolute;
+        right: -30px;
+        top: -170px;
+        z-index: 9999;
+    }
+    .Rroadmap_item__contain_right_photo, .sec_knight{
+        display: none;
+    }
+    .Rroadmap_item__contain_left_h1, .Rroadmap_item__contain_left_h1_end{
+        font-size: 40px;
+    }
+    .Rroadmap_item__contain_left_p, .Roadmap_second_electro{
+        font-size: 14px;
+    }
+    .Roadmap_second_electro_p {
+        width: 100%;
+    }
+    .Roadmap_second_electro{
+        flex-direction: column;
+    }
+    .sec{
+        margin-top: 30px;
+    }
+    .Rroadmap_item__contain_left_span {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 400px) {
+.gear_road_middle{
+    top: -85px;
+}
+
+}
+@media (max-width: 445px) {
+.Rroadmap_item__contain_left{
+    width: 80vw;
+}
+}

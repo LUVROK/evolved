@@ -1,0 +1,161 @@
+.item{
+    width: 100%;
+}
+img { pointer-events: none;
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+.item_block{
+    padding:  10px 10px;
+    transition:  all 0.4s;
+}
+.item_block:hover{
+    position: relative;
+    padding:  0;
+    cursor: pointer;
+}
+.galerbody_sec{
+    position: relative;
+    width: 100vw;
+    background: url("../../src/images/Component4.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.reverse{
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.Custgaler_sec{
+    position: fixed;
+    z-index: 1999;
+    bottom: 0;
+    width: 100vw;
+    min-height: 100vh !important;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+}
+.cust_galer_container{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+.cust_galer_container_top__close{
+    float: right;
+    fill: rgba(255, 255, 255, 0.59);
+}
+.cust_galer_container_top__close:hover{
+    fill: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+.cust_galer_container_top__close:hover{
+    cursor: pointer;
+}
+.cust_galer_container_top{
+    height: 5%;
+}
+.cust_galer_container_main{
+    height: 95%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+.cust_galer_container_main__photo{
+    width: 100% !important;
+    background-size: cover !important;
+}
+.cust_galer_container{
+    position: relative;
+    top: -40px;
+}
+@media (max-width: 980px) {
+    .cust_galer_container{
+        width: 640px;
+        height: 640px;
+    }
+}
+@media (max-width: 675px) {
+    .cust_galer_container{
+        width: 90vw;
+        height: 90vw;
+    }
+    .cust_galer_container_top{
+        height: auto;
+        position: relative;
+        top: -10px;
+    }
+}
+@media (max-width: 420px) {
+    .cust_galer_container_top__close{
+        height: 15px;
+    }
+}
+.cust_galer_container_main__info{
+padding: 20px;
+}
+.cust_galer_container_bottom{
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cust_galer_container_bottom_block{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+.galerbody_container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.knight_img{
+    width: calc(100% - 10px);
+    padding: 5px;
+    cursor: pointer !important;
+}
+.Custgaler{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh !important;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+}
+.cust_galer_container{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+.cust_galer_container_top__close{
+    float: right;
+    fill: rgba(255, 255, 255, 0.59);
+}
+@media (max-width: 980px) {
+    .galerbody_container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 640px) {
+    .galerbody_container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .item_block:last-child{
+
+    }
+}

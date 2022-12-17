@@ -1,0 +1,67 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    transition: 0.4s;
+}
+.logo{
+    display: flex;
+    position: relative;
+    font-size: 32px;
+}
+.logo_center{
+    width: 300px;
+}
+.logo_text{
+    background-size: 100%;
+}
+@keyframes moving {
+    100% {transform: rotate(360deg);}
+}
+.loading{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: gray;
+}
+.ellipsis{
+    opacity: 0.5;
+    height: 10px;
+    position: relative;
+    top: 10px;
+    left: 4px;
+}
+@media (max-width: 515px) {
+    .loading{
+        position: absolute;
+        bottom: 100px;
+    }
+}
+@media (max-width: 650px) {
+    .header_logo_gear {
+        width: 30px;
+        height: 30px;
+        left: 194px;
+        top: 23px;
+    }
+}
+#logo_gear_loader{
+top: 8px !important;
+    right: 33px;
+    width: 30px;
+    height: 30px;
+}
+@media (max-height: 840px) {
+.sec_knight, .Rroadmap_item__contain_first_gear, .sec_knight_last{
+    display: none;
+}
+}

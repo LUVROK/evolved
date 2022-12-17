@@ -1,0 +1,77 @@
+.faq{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    padding-top: 200px;
+    min-height: 100vh;
+    background: url("../../src/images/faq.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF !important;
+}
+.faq_h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.faq__container{
+    width: 980px;
+    display: flex;
+}
+.faq__container_left{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.faq_third{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq__container_right{
+    display: flex;
+    align-items: center;
+}
+.faq_item{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq_item__top{
+    position: relative;
+    display: flex;
+}
+.faq_item__top_img{
+    width: 270px;
+    height: 270px;
+}
+.faq_play{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+.faq_name{
+    text-align: center;
+    position: relative;
+    top: 17px;
+    font-size: 24px;
+}
+.faq_item_sec{
+    margin-top: 70px;
+}
+.faq_gear{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+summary::marker{
+    height: 30px;
+}

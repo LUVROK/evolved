@@ -1,0 +1,106 @@
+.team{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    min-height: 100vh;
+    background: url("../../src/images/Team.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    position: relative;
+}
+.team_h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 135px;
+}
+.team__container{
+    width: 980px;
+    display: flex;
+    margin-bottom: 170px;
+}
+.team__container_left{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.team_third{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.team__container_right{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.team_item{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team_item__top{
+    position: relative;
+    display: flex;
+}
+.team_item__top_img{
+    width: 270px;
+    height: 270px;
+}
+.team_play{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+.team_name{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.team_item_sec{
+    margin-top: 70px;
+}
+.team_gear{
+    animation: moving 5s infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+@media (max-width: 980px) {
+    .team_third{
+        width: 100%;
+    }
+    .team__container_left{
+        width: 100%;
+    }
+.team__container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+    .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-content__QOGZd .styles_row-content-text__2sgAB{
+        padding: 0 !important;
+    }
+}
+@media (max-width: 640px) {
+    .team_item__top_img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+.footer_blood{
+    position: absolute;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+}

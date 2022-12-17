@@ -1,0 +1,482 @@
+@font-face {
+  font-family: Engine;
+  src: url(./fonts/Engine.otf);
+}
+@font-face {
+  font-family: CraftworkGrotesk-Bold;
+  src: url(./fonts/CraftworkGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: "Craftwork Grotesk";
+  src: url("./fonts/CraftworkGrotesk-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+*{
+  font-family: "Craftwork Grotesk";
+}
+.hero_sect{
+  position: relative;
+  /*/
+-webkit-clip-path: polygon(0 0,100% 0,100% 88%,50% 100%,0 88%);
+   */
+  width: 100%;
+  height: 100vh;
+  padding: 0 0 0 0;
+  /*/
+      background: url("../src/images/wrap.png") no-repeat center;
+    /*/
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.wrap_video{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  bottom: 0;
+}
+.App{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes showDiv {
+  0%, 50% {
+    opacity: 0;
+    position: relative;
+    top: 40px;
+  }
+  100% {
+    transition: 0.3s;
+    opacity: 1;
+    top: 60px;
+  }
+}
+.header{
+  animation: showDiv 2.5s forwards;
+  max-width: 1160px;
+  padding: 0 60px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  position: relative;
+}
+.logo_text{
+  background-size: 100%;
+}
+@keyframes moving {
+  100% {transform: rotate(360deg);}
+}
+.logo_gear{
+  width: 25px;
+  height: 25px;
+  background: url("../src/images/logo_gear.png") no-repeat center;
+  background-size: 100%;
+  position: relative;
+  right: 59px;
+  top: 10px;
+  animation: moving 5s infinite linear;
+}
+.logo_gear__footer{
+  width: 22px;
+  height: 22px;
+  position: relative;
+  right: 57px;
+  top: 15px;
+}
+.header_right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.header_a{
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header_a_svg{
+  fill: #ffffff;
+}
+.header_a:hover{
+  transition: 0.4s;
+  background: #FFFFFF !important;
+  cursor: pointer;
+  border-color: #FFFFFF;
+}
+.header_a:hover .header_a_svg{
+  fill: #000000;
+  transition: 0.4s;
+}
+.bot_img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -2.5vw;
+  left: 0px;
+  z-index: 1000;
+}
+.galer_anim{
+  z-index: 999 !important;
+  animation-fill-mode: backwards !important;
+}
+
+/*//FOOOOOTER/*/
+.Footer{
+  position: relative;
+  border-top: 1px white solid;
+  width: 100%;
+  background: #000000;
+  display: flex;
+}
+.footer_block{
+  width: 1160px;
+  padding: 0 60px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.footer_block__left{
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.footer_block__right{
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer_block__left__p{
+  margin-top: 10px;
+  width: 500px;
+  line-height: 22px;
+}
+
+.footer_block__left__p__bottom{
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.footer_block__right_nav{
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer_block__right_nav_a{
+  margin-bottom: 5px;
+}
+.footer__social{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+}
+/*-----------------------------*/
+@media (max-width: 540px) {
+  .footer__social{
+    width: 100%;
+  }
+  .footer_block{
+    flex-direction: column;
+  }
+  .footer_block__left{
+    margin: 20px auto;
+    order: 1;
+  }
+  .footer_block__right {
+    margin: 20px auto;
+    order: 0;
+  }
+  .footer_block__right_nav, .footer_block__left, .footer_block__left__p{
+    text-align: center;
+  }
+  .footer_logo{
+    display: none !important;
+  }
+}
+
+.about{
+  background: url("../src/images/Component2.png") no-repeat center;
+  background-size: 110%;
+  position: relative;
+  text-align: center;
+  min-height: 105vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.chelka{
+  position: absolute;
+  top: -100px;
+}
+.welcom_left{
+  position: absolute;
+  height: 80%;
+  left: 10vw;
+}
+.welcom_right{
+  position: absolute;
+  height: 80%;
+  right: 10vw;
+}
+.about_h1{
+  font-size: 48px;
+}
+@media (max-width: 515px) {
+  .about_h1 {
+    margin-top: 50px;
+  }
+}
+
+.about_h2{
+  font-family: Engine;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-style: normal;
+  font-size: 84px;
+}
+.about_p{
+  margin: 40px auto;
+  width: 980px;
+  font-family: Craftwork Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+@media (max-width: 740px) {
+  .about_p, .about_h2{
+    width: 80vw !important;
+  }
+}
+.wrap_cent{
+    font-family: Engine;
+    z-index: 1000;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top:  48%;
+    line-height: 0;
+    transition: 0.4s;
+    font-size: 180px;
+}
+.wrap_cent_btn{
+  font-family: Engine;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  top:  calc(48% + 200px);
+  transition: 0.4s;
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  background-color: rgba(161, 20, 20, 0.5) !important;
+  border-radius: 4px;
+}
+.wrap_cent_btn:hover{
+  cursor: pointer;
+  background-color: rgba(161, 20, 20,0.8) !important;
+}
+.knd_little{
+  position: relative;
+}
+.knd_little_cld{
+  font-family: Craftwork Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  top: 80px;
+  font-size: 36px;
+  line-height: 20px;
+  right: 10px;
+}
+.prefooter{
+  background: url("../src/images/footer.jpg") 100% top;
+  width: 100vw;
+  background-size: cover;
+  height: 100%;
+}
+@media (max-width: 650px) {
+  .header {
+  display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    margin-bottom: 20px;
+  }
+  .header__logo_text {
+    font-family: "Craftwork Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+  }
+
+  .header_logo_gear {
+    width: 30px;
+    height: 30px;
+    right: 61px;
+    top: 24px;
+    background: url("../src/images/logo_gear.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    animation: moving 5s infinite linear;
+  }
+  .header_a{
+    margin-top: 10px;
+    background: #FFFFFF;
+  }
+  .header_a_svg{
+    fill: rgba(0, 0, 0, 0.99);
+  }
+}
+.Galery_main_block{
+  background: url("../src/images/Component4.png") no-repeat center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.Galery_main_block_wrap{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  width: 980px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Galery_main_block_wrap_item{
+  width: 320px;
+  height: 320px;
+  margin: 10px;
+}
+@media (max-width: 650px) {
+  .wrap_cent{
+    font-size: 140px;
+  }
+  .knd_little{
+    position: relative;
+  }
+  .knd_little_cld{
+    font-family: Craftwork Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    top: 80px;
+    font-size: 36px;
+    line-height: 20px;
+    right: 10px;
+  }
+}
+@media (max-width: 470px) {
+  .wrap_cent {
+    font-size: 100px;
+  }
+}
+@media (max-width: 1344px) {
+  .welcom_left{
+    position: absolute;
+    height: 60%;
+    left: 1vw;
+  }
+  .welcom_right{
+    position: absolute;
+    height: 60%;
+    right: 1vw;
+  }
+  .about_box{
+    padding: 50px;
+  }
+}
+@media (max-width: 980px) {
+  .about_p {
+    width: 80vw;
+  }
+  .chelka{
+    position: absolute;
+    top: -160px;
+  }
+}
+@media (max-width: 560px) {
+  .chelka{
+    position: absolute;
+    top: -200px;
+  }
+  .welcom_left{
+    position: absolute;
+    height: 40%;
+    left: 1vw;
+  }
+  .welcom_right{
+    position: absolute;
+    height: 40%;
+    right: 1vw;
+  }
+  .about_h1{
+    font-size: 28px;
+  }
+  .about_p{
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .about_h2 {
+    margin: 20px;
+  }
+  .welcom_left, .welcom_right{
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .welcom_left, .welcom_right{
+    display: none;
+  }
+}
+@media (max-width: 1160px) {
+  .footer_block{
+    width: 80vw;
+  }
+  .footer_block__left__p{
+    margin-top: 10px;
+    width: auto;
+    line-height: 22px;
+  }
+}
+.headeronlylogo{
+  display: flex;
+}
+
+.headeronlylogo_end{
+  margin-left: 35px;
+}
